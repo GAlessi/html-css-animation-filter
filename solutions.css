@@ -99,12 +99,27 @@
 
 /* Esercizio 13 */
 .ex-13-button:hover .ex-13-top-white {
-    animation: rotazione_13_top 2s linear;
+    animation: rotazione_13_top 3s linear;
 }
 
 @keyframes rotazione_13_top {
-    0%  {left:10%}
-    20% {left:calc(100% - 60px)}
-    40% {left:calc(100% - 30px); top: -15px;}
-    60% {left:calc(100% - 30px); top: 100%; }
+    0%   {left:10%;}
+    20%  {left:calc(100% - 60px); top: -10px;}
+    50%  {left:calc(100% - 30px); top: 100%;}
+    70%  {left:-20px; top: 100%;}
+    80%  {left:-10px; top: -10px;}
+    100% {left:10%;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: rotazione_13_bottom 3s linear;
+}
+
+@keyframes rotazione_13_bottom {
+    0%   {right:20%;}
+    20%  {right:calc(100% - 60px); bottom: -10px;}
+    50%  {right:calc(100% - 30px); bottom: 100%;}
+    70%  {right:-20px; bottom: 100%;}
+    80%  {right:-10px; bottom: -10px;}
+    100% {right:20%;}
 }
